@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestión de Usuarios - Inicio</title>
+
+<link href="lib/css/bootstrap.min.css" rel="stylesheet">
+<link href="lib/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Evaluación N°3 - jQuery/DataTables</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="formulario.html">Nuevo Usuario</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="card p-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h4 class="mb-0">Listado de Usuarios</h4>
+      <a href="formulario.html" class="btn btn-primary">
+        + Agregar Usuario
+      </a>
+    </div>
+
+    <div id="alertContainer"></div>
+
+    <table id="tablaUsuarios" class="table table-striped table-bordered" style="width:100%">
+      <thead class="table-dark">
+        <tr>
+          <th>Nombre</th>
+          <th>Usuario</th>
+          <th>Fecha Ingreso</th>
+          <th>Email</th>
+          <th>Sitio Web</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="lib/js/jquery.min.js"></script>
+¿<script src="lib/js/bootstrap.bundle.min.js"></script>
+<script src="lib/js/jquery.dataTables.min.js"></script>
+<script src="lib/js/dataTables.bootstrap5.min.js"></script>
+
+<script src="js/index.js"></script>
+</body>
+</html>
